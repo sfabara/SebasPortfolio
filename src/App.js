@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Home from "./components/Home.js";
-import { ReactComponent as CogIcon } from "./img/acorn.svg";
+import { ReactComponent as AcornIcon } from "./img/acorn.svg";
 import { ReactComponent as InfoIcon } from "./img/info.svg";
 import "./App.css";
 
 function App() {
   return (
     <Navbar>
-      <NavItem icon={<CogIcon />}>
+      <NavLink></NavLink>
+      <NavItem icon={<AcornIcon />}>
         <DropdownMenu />
       </NavItem>
       <NavItem icon={<InfoIcon />}>
@@ -28,13 +29,35 @@ function Navbar(props) {
 function NavItem(props) {
   const [open, setOpen] = useState(false);
   return (
-    <li className="nav-item\">
+    <li className="nav-item">
       <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
         {props.icon}
       </a>
 
       {open && props.children}
     </li>
+  );
+}
+
+function NavLink(props) {
+  return (
+    <ul className="nav-links">
+      <li>
+        <a href="#">HOME</a>
+      </li>
+      <li>
+        <a href="#">ABOUT</a>
+      </li>
+      <li>
+        <a href="#">EXPERIENCE</a>
+      </li>
+      <li>
+        <a href="#">PROJECTS</a>
+      </li>
+      <li>
+        <a href="#">ART</a>
+      </li>
+    </ul>
   );
 }
 
