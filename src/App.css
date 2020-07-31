@@ -1,9 +1,9 @@
 :root {
-  --bg: rgb(31, 31, 37);
+  --bg: rgb(47, 45, 56);
   --bg-accent: rgb(31, 31, 37);
   --text-color: rgb(245, 234, 210);
-  --hover-color: rgb(119, 194, 75);
-  --nav-size: 5rem;
+  --hover-color: #cc6472;
+  --nav-size: 5.5rem;
 
   --border-radius: 8px;
   --speed: 500ms;
@@ -13,11 +13,6 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins";
-  color: var(--text-color);
   outline: 0;
-}
-
-html {
   font-size: 62.5%;
-  background-color: rgb(47, 45, 56);
 }

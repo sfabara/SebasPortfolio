@@ -1,0 +1,16 @@
+.home-container {
+  display: flex;
+  align-items: center;
+
+  padding: 10rem 30rem 0rem 30rem;
+}
+
+.home-container h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.home-container p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0rem 0rem 0rem 5rem;
+}
