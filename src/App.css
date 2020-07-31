@@ -1,7 +1,8 @@
 :root {
-  --bg: #242526;
-  --bg-accent: #484a4d;
+  --bg: rgb(31, 31, 37);
+  --bg-accent: rgb(31, 31, 37);
   --text-color: rgb(245, 234, 210);
+  --hover-color: rgb(119, 194, 75);
   --nav-size: 5rem;
 
   --border-radius: 8px;
@@ -13,109 +14,10 @@
   margin: 0;
   font-family: "Poppins";
   color: var(--text-color);
+  outline: 0;
 }
 
 html {
   font-size: 62.5%;
   background-color: rgb(47, 45, 56);
-}
-
-a {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-.navbar {
-  height: var(--nav-size);
-  background-color: rgb(31, 31, 37);
-  display: flex;
-}
-
-.navbar-nav {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
-.nav-item {
-  width: calc(var(--nav-size) * 0.8);
-
-  display: flex;
-  margin: 0.7rem;
-}
-
-.nav-links {
-  display: flex;
-  flex-grow: 9;
-
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-links ul {
-  margin: 1rem 0rem 0rem 0rem;
-}
-
-.nav-links li {
-  display: inline;
-  margin: 0rem 4rem;
-  font-size: 2rem;
-}
-
-.nav-links a {
-  display: inline-block;
-  margin: 1rem 0rem;
-}
-
-.nav-links a:hover {
-  color: rgb(231, 183, 93);
-  text-decoration: underline;
-}
-
-.icon-button svg {
-  --button-size: calc(var(--nav-size) * 0.5);
-  width: var(--button-size);
-  height: var(--button-size);
-  background-color: rgb(64, 61, 78);
-  border-radius: 50%;
-  padding: 5px;
-  margin: 1px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: filter 300ms;
-}
-
-.icon-button svg:hover {
-  background-color: rgb(231, 183, 93);
-}
-
-.dropdown {
-  position: absolute;
-  top: 58px;
-  width: 300px;
-  transform: translateX(-45%);
-  background-color: var(--bg);
-  border: var(--border);
-  border-radius: var(--border-radius);
-  padding: 1rem;
-  overflow: hidden;
-  transition: height var(--speed) ease;
-}
-
-.menu-item {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  border-radius: var(--border-radius);
-  transition: background var(--speed);
-  padding: 0.5rem;
-}
-
-.menu-item:hover {
-  background-color: #525357;
-}
-
-.icon-right {
-  margin-left: auto;
 }
