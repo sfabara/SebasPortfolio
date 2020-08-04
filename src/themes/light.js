@@ -1,6 +1,8 @@
 export default {
   background: "rgb(245, 234, 210)",
-  accent: "#ffa578",
+  accent: "#dec0b1",
+
   textColor: "rgb(47, 45, 56)",
-  hoverColor: "#66c2fd",
+  buttonColor: "#dbd1c5",
+  hoverColor: "#628bbd",
 };
